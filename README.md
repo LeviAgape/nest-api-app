@@ -32,7 +32,8 @@
 ```bash
 $ npm install
 ```
-Para iniciar, instale as dependências na página raiz do projeto. Após isso use o comando '' npm run start:dev '' para inicializar a API. Crie um arquivo .env para registrar o seu banco de dados
+Para iniciar, instale as dependências na página raiz do projeto. Após isso para inicializar a API. Crie um arquivo .env para registrar o seu banco de dados.
+No terminal utilize do comando '' npx prisma db seed '' para povoar o banco de dados, use o comando '' npm run start:dev '' para iniciar a aplicação
 ## Running the app
 
 ```bash
