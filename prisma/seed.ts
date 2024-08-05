@@ -3,8 +3,6 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function run() {
-    await prisma.post.deleteMany();
-      // Cria posts de exemplo
   const post1 = await prisma.post.create({
     data: {
       title: "Primeiro Post",
@@ -16,6 +14,20 @@ async function run() {
     data: {
       title: "Segundo Post",
       description: "Descrição do segundo post",
+    },
+  });
+
+  const post3 = await prisma.member.create({
+    data: {
+      user: "Primeiro User",
+      age: 17,
+    },
+  });
+
+  const post4 = await prisma.member.create({
+    data: {
+      user: "Segundo User",
+      age: 20,
     },
   });
 }

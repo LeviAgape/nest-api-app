@@ -3,7 +3,7 @@ import { PostsService } from './posts.service';
 import { Post } from './entities/post';
 
 @Controller()
-export class AppController {
+export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
   @Get('/posts')
