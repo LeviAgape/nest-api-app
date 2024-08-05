@@ -8,7 +8,7 @@ export class PrismaPostRepository implements PostRepository {
   constructor(private readonly prisma: PrismaService) {}
 
   async findMany(): Promise<Post[]> {
-    const users = await this.prisma.post.findMany();
-    return users;
+    const posts = await this.prisma.post.findMany();
+    return posts;
   }
 }
