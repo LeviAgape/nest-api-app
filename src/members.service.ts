@@ -6,7 +6,7 @@ import { Member } from './entities/member';
 export class MembersService {
   constructor(private readonly memberRepository: MemberRepository) {}
   async getMembers(): Promise<Member[]> {
-    const posts = await this.memberRepository.getMembers();
-    return posts;
+    const member = await this.memberRepository.getMembers();
+    return member;
   }
 }
