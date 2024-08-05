@@ -26,12 +26,13 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
 ## Installation
 
 ```bash
 $ npm install
 ```
-
+Para iniciar, instale as dependências na página raiz do projeto. Após isso use o comando '' npm run start:dev '' para inicializar a API. Crie um arquivo .env para registrar o seu banco de dados
 ## Running the app
 
 ```bash
